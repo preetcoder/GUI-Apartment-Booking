@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFlexi.AddNewPropertyController">
+   <content>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="685.0">
+         <children>
+            <Text layoutX="189.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Property" wrappingWidth="231.05419921875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Label layoutX="61.0" layoutY="63.0" text="Property Type" />
+            <ComboBox fx:id="Propertytype" layoutX="60.0" layoutY="85.0" prefHeight="26.0" prefWidth="496.0">
+               <tooltip>
+                  <Tooltip text="Property Type" />
+               </tooltip>
+            </ComboBox>
+            <Label layoutX="61.0" layoutY="125.0" text="Street No." />
+            <TextField fx:id="streetno" layoutX="62.0" layoutY="148.0" prefHeight="26.0" prefWidth="495.0" />
+           
+            <Label layoutX="64.0" layoutY="186.0" text="Street Name" />
+            <TextField fx:id="streetname" layoutX="64.0" layoutY="208.0" prefHeight="26.0" prefWidth="495.0" />
+           
+            <Label layoutX="65.0" layoutY="243.0" text="Property Description" />
+            <TextArea fx:id="description" layoutX="62.0" layoutY="262.0" prefHeight="55.0" prefWidth="494.0" />
+            
+            <Label layoutX="64.0" layoutY="325.0" text="Image (Click Button to select Image)" />
+            <TextField fx:id="ImageVal" disable="true" layoutX="65.0" layoutY="349.0" prefHeight="26.0" prefWidth="359.0" />
+           
+            <Button fx:id="imageChooser" layoutX="491.0" layoutY="347.0" mnemonicParsing="false" onAction="#ChooseImage" text="Image" />
+          
+            <Label layoutX="64.0" layoutY="381.0" text="Last Maintenance Date (DD/MM/YYYY)" />
+            <DatePicker fx:id="lmd" layoutX="65.0" layoutY="404.0" prefHeight="26.0" prefWidth="491.0" />
+            
+            <Button id="canceladdproperty" layoutX="65.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#closeButtonAction" text="Cancel" />
+            <Button id="saveaddproperty" layoutX="505.0" layoutY="502.0" mnemonicParsing="false" onAction="#SaveProperty" text="Save" />
+            <Label layoutX="67.0" layoutY="440.0" text="No. of Beds" />
+            <ComboBox fx:id="beds" layoutX="68.0" layoutY="461.0" prefHeight="26.0" prefWidth="490.0" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>

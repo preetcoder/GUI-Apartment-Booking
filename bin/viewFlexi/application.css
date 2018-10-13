@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.btn{
+	-fx-background-color:lightgrey;
+	-fx-border-style:solid;
+	-fx-border-radius:4px;
+	-fx-cursor:hand;
+}
+
+.heading{
+	
+}
